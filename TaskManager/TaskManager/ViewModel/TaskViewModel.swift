@@ -11,13 +11,20 @@ import Foundation
 final class TaskViewModel {
     let title: String
     let des: String?
-    let date: Date
+    let date: String
     let inReview: Bool
+    
+    var dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter
+    }()
     
     init(task: Task) {
         self.title = task.title!
         self.des = task.des
-        self.date = task.creationDate!
+        let date = dateFormatter.string(from: task.creationDate!)
+        self.date = "Creation Date: \(date)"
         self.inReview = task.inReview
     }
 }

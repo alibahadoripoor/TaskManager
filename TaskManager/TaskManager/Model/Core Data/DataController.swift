@@ -6,10 +6,9 @@
 //  Copyright © 2020 Ali Bahadori. All rights reserved.
 //
 
-import Foundation
 import CoreData
 
-final class DataController {
+class DataController {
     static let shared = DataController()
     
     lazy var persistentContainer: NSPersistentContainer = {
@@ -22,14 +21,15 @@ final class DataController {
         return persistentContainer
     }()
     
-    var viewContext: NSManagedObjectContext {
+    lazy var viewContext: NSManagedObjectContext = {
         return persistentContainer.viewContext
-    }
+    }()
     
-    var backgroundContext: NSManagedObjectContext {
+    lazy var backgroundContext: NSManagedObjectContext = {
         return persistentContainer.newBackgroundContext()
-    }
+    }()
     
+    public init(){}
 }
 
 extension DataController{

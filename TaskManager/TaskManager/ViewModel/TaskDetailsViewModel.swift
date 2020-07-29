@@ -13,7 +13,7 @@ final class TaskDetailsViewModel {
     private var commentDataRepository: CommentDataRepositoryProtocol
     var coordinator: TaskDetailsCoordinator!
     var task: Task!
-    private var comments: [Comment] = []
+    var comments: [Comment] = []
     
     var header: Box<TaskViewModel?> = Box(nil)
     var cells: Box<[CommentViewModel]> = Box([])
@@ -28,7 +28,15 @@ final class TaskDetailsViewModel {
     }
     
     func viewDidLoad(){
-        header.value = TaskViewModel(task: task)
+        setTaskHeader()
+        getAllComments()
+    }
+    
+    func setTaskHeader(){
+        header.value = TaskViewModel(task: self.task)
+    }
+    
+    func getAllComments(){
         commentDataRepository.getAll(where: task) { [weak self] (comments) in
             guard let self = self else { return }
             self.comments = comments

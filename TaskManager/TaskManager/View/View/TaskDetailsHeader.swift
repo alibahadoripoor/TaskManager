@@ -13,6 +13,7 @@ final class TaskDetailsHeader: UIView {
     let desTextField = UITextField()
     let inReviewSwitch = UISwitch()
     private let inReviewLable = UILabel()
+    private let dateLable = UILabel()
     private let sepratorLineView = UIView()
     private let vStackView = UIStackView()
     private let hStackView = UIStackView()
@@ -21,6 +22,7 @@ final class TaskDetailsHeader: UIView {
         nameTextField.text = task.title
         desTextField.text = task.des
         inReviewSwitch.isOn = task.inReview
+        dateLable.text = task.date
     }
     
     override init(frame: CGRect) {
@@ -52,6 +54,8 @@ final class TaskDetailsHeader: UIView {
         inReviewLable.text = "Review"
         inReviewLable.font = .systemFont(ofSize: 22)
         
+        dateLable.font = .systemFont(ofSize: 20)
+        
         sepratorLineView.backgroundColor = .systemGray4
         sepratorLineView.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -61,6 +65,7 @@ final class TaskDetailsHeader: UIView {
         vStackView.addArrangedSubview(nameTextField)
         vStackView.addArrangedSubview(desTextField)
         vStackView.addArrangedSubview(hStackView)
+        vStackView.addArrangedSubview(dateLable)
         hStackView.addArrangedSubview(inReviewLable)
         hStackView.addArrangedSubview(inReviewSwitch)
         addSubview(sepratorLineView)

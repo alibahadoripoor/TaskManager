@@ -11,7 +11,7 @@ import Foundation
 final class ProjectListViewModel {
     private var dataRepository: ProjectDataRepositoryProtocol
     var coordinator: ProjectCoordinator!
-    private var projects: [Project] = []
+    var projects: [Project] = []
     
     var cells: Box<[ProjectViewModel]> = Box([])
     var newProject: Box<ProjectViewModel?> = Box(nil)

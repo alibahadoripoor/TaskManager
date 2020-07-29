@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB3A024B24C6EB9E007999CD /* AddFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A024A24C6EB9E007999CD /* AddFooterView.swift */; };
 		DB3A024D24C6EE0F007999CD /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A024C24C6EE0E007999CD /* UIKitExtensions.swift */; };
+		DB44B15E24D17E9B00620472 /* ProjectLocalDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44B15D24D17E9B00620472 /* ProjectLocalDataSourceTest.swift */; };
 		DB4C4A2C24CA408E00929ACF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C4A2B24CA408E00929ACF /* AppCoordinator.swift */; };
 		DB4C4A2E24CA432000929ACF /* ProjectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C4A2D24CA432000929ACF /* ProjectCoordinator.swift */; };
 		DB4C4A3024CA45E300929ACF /* TaskCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C4A2F24CA45E300929ACF /* TaskCoordinator.swift */; };
@@ -26,10 +27,19 @@
 		DB64B1AB24C46EBE0073B7FB /* DataRepositoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64B1AA24C46EBD0073B7FB /* DataRepositoryProtocols.swift */; };
 		DB64B1AE24C46F530073B7FB /* TaskDataRepositpry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64B1AD24C46F530073B7FB /* TaskDataRepositpry.swift */; };
 		DB64B1B024C46F7C0073B7FB /* CommentDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64B1AF24C46F7C0073B7FB /* CommentDataRepository.swift */; };
+		DB6DDE3E24D0823E00045FAE /* DataControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DDE3D24D0823E00045FAE /* DataControllerMock.swift */; };
+		DB6DDE4224D084FC00045FAE /* ProjectDataRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DDE4124D084FC00045FAE /* ProjectDataRepositoryMock.swift */; };
+		DB6DDE4424D0864E00045FAE /* ProjectListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DDE4324D0864E00045FAE /* ProjectListViewModelTest.swift */; };
 		DB7397B424C6290D0082B241 /* ProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7397B324C6290D0082B241 /* ProjectVC.swift */; };
 		DB7397B624C6294C0082B241 /* TaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7397B524C6294C0082B241 /* TaskVC.swift */; };
 		DB7397B824C629720082B241 /* TaskDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7397B724C629720082B241 /* TaskDetailsVC.swift */; };
 		DB7397BE24C62AA60082B241 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7397BD24C62AA60082B241 /* ProjectCell.swift */; };
+		DB9C5DBD24D186B30000F5E8 /* TestLocalDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C5DBC24D186B30000F5E8 /* TestLocalDataSourceTest.swift */; };
+		DB9C5DBF24D195950000F5E8 /* CommentLocalDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C5DBE24D195950000F5E8 /* CommentLocalDataSourceTest.swift */; };
+		DB9C5DC124D1B8000000F5E8 /* CommentDataRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C5DC024D1B8000000F5E8 /* CommentDataRepositoryMock.swift */; };
+		DBBBEFDB24D170DD007BFC4D /* TaskListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBBEFDA24D170DD007BFC4D /* TaskListViewModelTest.swift */; };
+		DBBBEFDD24D1714A007BFC4D /* TaskDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBBEFDC24D1714A007BFC4D /* TaskDetailsViewModelTest.swift */; };
+		DBBBEFDF24D1717C007BFC4D /* TaskDataRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBBEFDE24D1717C007BFC4D /* TaskDataRepositoryMock.swift */; };
 		DBD967EC24CD9DBE000CB836 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD967EB24CD9DBE000CB836 /* TaskCell.swift */; };
 		DBD967EE24CD9ECD000CB836 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD967ED24CD9ECD000CB836 /* CommentCell.swift */; };
 		DBE7E85024CDB1B10042EDAA /* TaskDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE7E84F24CDB1B10042EDAA /* TaskDetailsHeader.swift */; };
@@ -44,9 +54,20 @@
 		DBE88FD424C312870016D07E /* DataSourceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE88FD324C312870016D07E /* DataSourceProtocols.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DB6DDE3724D081F500045FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBE88FA824C1F17F0016D07E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBE88FAF24C1F1800016D07E;
+			remoteInfo = TaskManager;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		DB3A024A24C6EB9E007999CD /* AddFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFooterView.swift; sourceTree = "<group>"; };
 		DB3A024C24C6EE0E007999CD /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		DB44B15D24D17E9B00620472 /* ProjectLocalDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLocalDataSourceTest.swift; sourceTree = "<group>"; };
 		DB4C4A2B24CA408E00929ACF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		DB4C4A2D24CA432000929ACF /* ProjectCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCoordinator.swift; sourceTree = "<group>"; };
 		DB4C4A2F24CA45E300929ACF /* TaskCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCoordinator.swift; sourceTree = "<group>"; };
@@ -64,10 +85,21 @@
 		DB64B1AA24C46EBD0073B7FB /* DataRepositoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryProtocols.swift; sourceTree = "<group>"; };
 		DB64B1AD24C46F530073B7FB /* TaskDataRepositpry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataRepositpry.swift; sourceTree = "<group>"; };
 		DB64B1AF24C46F7C0073B7FB /* CommentDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDataRepository.swift; sourceTree = "<group>"; };
+		DB6DDE3224D081F500045FAE /* TaskManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6DDE3624D081F500045FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6DDE3D24D0823E00045FAE /* DataControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataControllerMock.swift; sourceTree = "<group>"; };
+		DB6DDE4124D084FC00045FAE /* ProjectDataRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDataRepositoryMock.swift; sourceTree = "<group>"; };
+		DB6DDE4324D0864E00045FAE /* ProjectListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModelTest.swift; sourceTree = "<group>"; };
 		DB7397B324C6290D0082B241 /* ProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectVC.swift; sourceTree = "<group>"; };
 		DB7397B524C6294C0082B241 /* TaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVC.swift; sourceTree = "<group>"; };
 		DB7397B724C629720082B241 /* TaskDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsVC.swift; sourceTree = "<group>"; };
 		DB7397BD24C62AA60082B241 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		DB9C5DBC24D186B30000F5E8 /* TestLocalDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLocalDataSourceTest.swift; sourceTree = "<group>"; };
+		DB9C5DBE24D195950000F5E8 /* CommentLocalDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentLocalDataSourceTest.swift; sourceTree = "<group>"; };
+		DB9C5DC024D1B8000000F5E8 /* CommentDataRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDataRepositoryMock.swift; sourceTree = "<group>"; };
+		DBBBEFDA24D170DD007BFC4D /* TaskListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModelTest.swift; sourceTree = "<group>"; };
+		DBBBEFDC24D1714A007BFC4D /* TaskDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewModelTest.swift; sourceTree = "<group>"; };
+		DBBBEFDE24D1717C007BFC4D /* TaskDataRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataRepositoryMock.swift; sourceTree = "<group>"; };
 		DBD967EB24CD9DBE000CB836 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		DBD967ED24CD9ECD000CB836 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		DBE7E84F24CDB1B10042EDAA /* TaskDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsHeader.swift; sourceTree = "<group>"; };
@@ -85,6 +117,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DB6DDE2F24D081F500045FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBE88FAD24C1F1800016D07E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +203,26 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
+		DB6DDE3324D081F500045FAE /* TaskManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBBBEFD824D1701E007BFC4D /* Model Test */,
+				DBBBEFD724D16FEC007BFC4D /* ViewModel */,
+				DBBBEFD924D17055007BFC4D /* SupportingFiles */,
+			);
+			path = TaskManagerTests;
+			sourceTree = "<group>";
+		};
+		DB6DDE4624D0882B00045FAE /* Data Repositories Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DB6DDE4124D084FC00045FAE /* ProjectDataRepositoryMock.swift */,
+				DBBBEFDE24D1717C007BFC4D /* TaskDataRepositoryMock.swift */,
+				DB9C5DC024D1B8000000F5E8 /* CommentDataRepositoryMock.swift */,
+			);
+			path = "Data Repositories Mock";
+			sourceTree = "<group>";
+		};
 		DB7397B124C628D60082B241 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,10 +246,41 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DBBBEFD724D16FEC007BFC4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB6DDE4324D0864E00045FAE /* ProjectListViewModelTest.swift */,
+				DBBBEFDA24D170DD007BFC4D /* TaskListViewModelTest.swift */,
+				DBBBEFDC24D1714A007BFC4D /* TaskDetailsViewModelTest.swift */,
+				DB6DDE4624D0882B00045FAE /* Data Repositories Mock */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBBBEFD824D1701E007BFC4D /* Model Test */ = {
+			isa = PBXGroup;
+			children = (
+				DB44B15D24D17E9B00620472 /* ProjectLocalDataSourceTest.swift */,
+				DB9C5DBC24D186B30000F5E8 /* TestLocalDataSourceTest.swift */,
+				DB9C5DBE24D195950000F5E8 /* CommentLocalDataSourceTest.swift */,
+				DB6DDE3D24D0823E00045FAE /* DataControllerMock.swift */,
+			);
+			path = "Model Test";
+			sourceTree = "<group>";
+		};
+		DBBBEFD924D17055007BFC4D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DB6DDE3624D081F500045FAE /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		DBE88FA724C1F17F0016D07E = {
 			isa = PBXGroup;
 			children = (
 				DBE88FB224C1F1800016D07E /* TaskManager */,
+				DB6DDE3324D081F500045FAE /* TaskManagerTests */,
 				DBE88FB124C1F1800016D07E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				DBE88FB024C1F1800016D07E /* TaskManager.app */,
+				DB6DDE3224D081F500045FAE /* TaskManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -261,6 +352,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DB6DDE3124D081F500045FAE /* TaskManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6DDE3B24D081F500045FAE /* Build configuration list for PBXNativeTarget "TaskManagerTests" */;
+			buildPhases = (
+				DB6DDE2E24D081F500045FAE /* Sources */,
+				DB6DDE2F24D081F500045FAE /* Frameworks */,
+				DB6DDE3024D081F500045FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6DDE3824D081F500045FAE /* PBXTargetDependency */,
+			);
+			name = TaskManagerTests;
+			productName = TaskManagerTests;
+			productReference = DB6DDE3224D081F500045FAE /* TaskManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DBE88FAF24C1F1800016D07E /* TaskManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBE88FC424C1F1810016D07E /* Build configuration list for PBXNativeTarget "TaskManager" */;
@@ -288,6 +397,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Ali Bahadori";
 				TargetAttributes = {
+					DB6DDE3124D081F500045FAE = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = DBE88FAF24C1F1800016D07E;
+					};
 					DBE88FAF24C1F1800016D07E = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -307,11 +420,19 @@
 			projectRoot = "";
 			targets = (
 				DBE88FAF24C1F1800016D07E /* TaskManager */,
+				DB6DDE3124D081F500045FAE /* TaskManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DB6DDE3024D081F500045FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBE88FAE24C1F1800016D07E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +445,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DB6DDE2E24D081F500045FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBBEFDF24D1717C007BFC4D /* TaskDataRepositoryMock.swift in Sources */,
+				DB6DDE4424D0864E00045FAE /* ProjectListViewModelTest.swift in Sources */,
+				DB6DDE3E24D0823E00045FAE /* DataControllerMock.swift in Sources */,
+				DB9C5DC124D1B8000000F5E8 /* CommentDataRepositoryMock.swift in Sources */,
+				DB6DDE4224D084FC00045FAE /* ProjectDataRepositoryMock.swift in Sources */,
+				DBBBEFDB24D170DD007BFC4D /* TaskListViewModelTest.swift in Sources */,
+				DB9C5DBF24D195950000F5E8 /* CommentLocalDataSourceTest.swift in Sources */,
+				DBBBEFDD24D1714A007BFC4D /* TaskDetailsViewModelTest.swift in Sources */,
+				DB9C5DBD24D186B30000F5E8 /* TestLocalDataSourceTest.swift in Sources */,
+				DB44B15E24D17E9B00620472 /* ProjectLocalDataSourceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBE88FAC24C1F1800016D07E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +504,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DB6DDE3824D081F500045FAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBE88FAF24C1F1800016D07E /* TaskManager */;
+			targetProxy = DB6DDE3724D081F500045FAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		DBE88FBE24C1F1810016D07E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -378,6 +524,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DB6DDE3924D081F500045FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KXC6JA77B8;
+				INFOPLIST_FILE = TaskManagerTests/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.TaskManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskManager.app/TaskManager";
+			};
+			name = Debug;
+		};
+		DB6DDE3A24D081F500045FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KXC6JA77B8;
+				INFOPLIST_FILE = TaskManagerTests/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.TaskManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskManager.app/TaskManager";
+			};
+			name = Release;
+		};
 		DBE88FC224C1F1810016D07E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +717,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB6DDE3B24D081F500045FAE /* Build configuration list for PBXNativeTarget "TaskManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6DDE3924D081F500045FAE /* Debug */,
+				DB6DDE3A24D081F500045FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DBE88FAB24C1F17F0016D07E /* Build configuration list for PBXProject "TaskManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -12,7 +12,7 @@ final class TaskListViewModel {
     private var dataRepository: TaskDataRepositoryProtocol
     var coordinator: TaskCoordinator!
     var project: Project!
-    private var tasks: [Task] = []
+    var tasks: [Task] = []
     
     var cells: Box<[TaskViewModel]> = Box([])
     var newTask: Box<TaskViewModel?> = Box(nil)
